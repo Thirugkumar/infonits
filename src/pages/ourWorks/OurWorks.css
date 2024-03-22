@@ -1,0 +1,248 @@
+.our-works-head {
+  padding: 180px 180px 100px 180px;
+  position: relative;
+  overflow: hidden;
+}
+.our-works-head-heading {
+  font-size: 2.8rem;
+  text-align: center;
+  color: #fff;
+}
+.our-works-head-map-img1 {
+  position: absolute;
+  top: 10px;
+  left: -480px;
+  opacity: 80%;
+  filter: sepia(10);
+}
+.our-works-head-map-img2 {
+  position: absolute;
+  top: -10px;
+  right: -450px;
+  opacity: 80%;
+  filter: sepia(10);
+}
+/*------------------gallery---------*/
+.gallery-main {
+  padding: 20px 180px 40px 180px;
+}
+.galleryItem img {
+  width: 280px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 7px 0px #082d5380;
+}
+.galleryItem img:hover {
+  transform: scale(1.3);
+  transition: all 0.4s;
+  box-shadow: 0px 30px 100px 0px #616161;
+}
+.filterItems ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  gap: 20px;
+  margin-top: 40px;
+  list-style: none;
+}
+.filterItems ul button {
+  background: #082e53;
+  color: #fff;
+  padding: 10px 30px 10px 30px;
+  text-transform: uppercase;
+  border: navajowhite;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.filterItems ul button:active {
+  background: #ff5f35;
+}
+@media only screen and (max-width: 1280px) {
+  .filterItems ul {
+    gap: 2px;
+  }
+
+  .filterItems ul button {
+    padding: 10px 10px 10px 10px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .gallery-main {
+    padding: 10px 60px 10px 60px;
+  }
+
+  .galleryItem img {
+    width: 280px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .filterItems ul {
+    gap: 1px;
+  }
+
+  .filterItems ul button {
+    padding: 10px 10px 10px 10px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .our-works-head {
+    padding: 140px 35px 80px 35px;
+  }
+  .our-works-head-heading {
+    font-size: 2.8rem;
+  }
+  .our-works-head-map-img1 {
+    left: -600px;
+  }
+  .our-works-head-map-img2 {
+    right: -580px;
+  }
+  .filterItems ul {
+    gap: 2px;
+  }
+  .filterItems ul button {
+    padding: 10px 10px 10px 10px;
+    font-size: 1rem;
+  }
+  .gallery-main {
+    padding: 20px 50px 20px 50px;
+  }
+  .galleryItem img {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 835px) {
+  .our-works-head {
+    padding: 100px 50px 80px 50px;
+  }
+  .galleryItem img:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .our-works-head-map-img1 {
+    left: -580px;
+    opacity: 40%;
+  }
+  .our-works-head-map-img2 {
+    right: -550px;
+    opacity: 40%;
+    gap: 1px;
+  }
+
+  .filterItems ul {
+    padding: 0px 10px 0px 10px;
+    gap: 5px;
+  }
+
+  .filterItems ul button {
+    padding: 10px 10px 10px 10px;
+  }
+
+  .gallery-main {
+    padding: 20px 20px 40px 20px;
+  }
+
+  .galleryItem img {
+    width: 380px;
+  }
+  .galleryItem {
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .our-works-head {
+    padding: 160px 20px 100px 20px;
+  }
+  .our-works-head-heading {
+    font-size: 2.4rem;
+    margin: 0px 20px 0px 20px;
+  }
+
+  .our-works-head-map-img1 {
+    left: -630px;
+    opacity: 40%;
+  }
+  .our-works-head-map-img2 {
+    right: -610px;
+    opacity: 40%;
+    gap: 1px;
+  }
+
+  .filterItems ul {
+    padding: 0px 10px 0px 10px;
+    gap: 5px;
+  }
+
+  .filterItems ul button {
+    padding: 10px 10px 10px 10px;
+    font-size: 0.9rem;
+  }
+
+  .gallery-main {
+    padding: 10px 30px 10px 30px;
+  }
+
+  .galleryItem img {
+    width: 330px;
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  .our-works-head {
+    padding: 120px 20px 40px 20px;
+  }
+
+  .our-works-head-heading {
+    font-size: 2.2rem;
+  }
+  .our-works-head-map-img1 {
+    left: -650px;
+  }
+  .our-works-head-map-img2 {
+    right: -630px;
+  }
+
+  .filterItems ul button {
+    font-size: 1rem;
+    width: 100%;
+    height: 60px;
+  }
+
+  .filterItems ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0px 20px 0px 20px;
+  }
+  .gallery-main {
+    padding: 10px 30px 10px 30px;
+  }
+
+  .galleryItem img {
+    width: 380px;
+  }
+}
+
+@media only screen and (max-width: 393px) {
+  .gallery-main {
+    padding: 10px 20px 10px 20px;
+  }
+  .galleryItem img {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .galleryItem img {
+    width: 300px;
+  }
+}

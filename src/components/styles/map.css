@@ -1,0 +1,244 @@
+.maps-maps {
+  width: 100%;
+  overflow: hidden;
+}
+.maps {
+  display: flex;
+  width: 100%;
+  padding: 40px 160px 20px 160px;
+  overflow: hidden;
+}
+.map-subtitle {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+.map-subtitle span {
+  display: inline-block;
+  position: relative;
+}
+.map-subtitle span:after {
+  content: "\2015";
+  position: absolute;
+  opacity: 50%;
+  top: 0;
+  right: -25px;
+}
+.map-right .map-title {
+  font-size: 2.6rem;
+  margin-top: 10px;
+}
+.maps .map-text {
+  font-size: 1.3rem;
+  margin-top: 20px;
+}
+.map {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.map-left img {
+  height: 340px;
+}
+
+.map-right {
+  padding: 40px;
+}
+.map-btn {
+  margin-top: 40px;
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+  width: 200px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.308);
+}
+.map-btn:hover {
+  background-color: #003366;
+  transform: scale(0.9);
+  transition: all 0.1s ease;
+  box-shadow: none;
+}
+.indi {
+  height: 40px;
+  cursor: pointer;
+}
+.indi:hover {
+  transform: scale(0.9);
+  transition: all 0.3s ease;
+  filter: sepia(200) saturate(20);
+}
+@media only screen and (max-width: 4100px) {
+  .maps {
+    margin: auto;
+    width: 1400px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .maps {
+    margin: 0 auto;
+    padding: 10px;
+    width: 1100px;
+    overflow: hidden;
+  }
+  .map-right .map-title {
+    font-size: 2.5rem;
+  }
+  .maps .map-text {
+    font-size: 1.1rem;
+    line-height: 30px;
+  }
+  .map-right {
+    padding: 30px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .maps {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .map {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  .indi {
+    margin: 0px 0px 0px 210px;
+  }
+  .map-right {
+    text-align: center;
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+  }
+  .map-right .map-text {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 835px) {
+  .maps {
+    display: flex;
+    flex-direction: column;
+  }
+  .indi {
+    margin: 0px 0px 0px 110px;
+  }
+  .map-right .map-text {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .indi {
+    margin: 0px 0px 0px 70px;
+  }
+}
+@media only screen and (max-width: 428px) {
+  .maps {
+    padding: 40px 10px 40px 10px;
+  }
+  .map {
+    width: 100%;
+    height: 200px;
+  }
+  .indi {
+    height: 50px;
+    padding: 0px 0px 20px 20px;
+    margin: 0;
+  }
+  .map-left img {
+    width: 100%;
+    height: 200px;
+  }
+  .map-right {
+    width: 100%;
+    margin-top: 10px;
+    padding: 0;
+  }
+  .map-subtitle {
+    font-size: 1.1rem;
+    text-align: start;
+  }
+  .map-right .map-title {
+    font-size: 2rem;
+    text-align: start;
+  }
+  .map-right .map-text {
+    font-size: 1.2rem;
+    text-align: start;
+  }
+  .map-btn {
+    align-items: center;
+    text-align: center;
+  }
+  .small .sl {
+    margin: -85px 0px 0px -142px;
+  }
+  .small .us {
+    margin: -70px 0px 0px -40px;
+  }
+  .small .can {
+    margin: -60px 0px 0px -30px;
+  }
+  .small .aus {
+    margin: -100px 0px 0px -160px;
+  }
+  .small .uk {
+    margin: -65px 0px 0px -100px;
+  }
+  .small .swiss {
+    margin: -45px 0px 0px -105px;
+  }
+}
+@media only screen and (max-width: 391px) {
+  .maps {
+    padding: 40px 10px 40px 10px;
+  }
+  .map-right {
+    width: 100%;
+  }
+  .map-subtitle {
+    font-size: 0.9rem;
+    text-align: start;
+  }
+  .map-right .map-title {
+    font-size: 2rem;
+    text-align: start;
+  }
+  .map-right .map-text {
+    font-size: 1.1rem;
+    text-align: start;
+    margin-top: 0px;
+  }
+  .small .sl {
+    margin: -85px 0px 0px -162px;
+  }
+  .small .us {
+    margin: -70px 0px 0px -40px;
+  }
+  .small .can {
+    margin: -60px 0px 0px -30px;
+  }
+  .small .aus {
+    margin: -100px 0px 0px -180px;
+  }
+  .small .uk {
+    margin: -65px 0px 0px -120px;
+  }
+  .small .swiss {
+    margin: -45px 0px 0px -125px;
+  }
+}
+@media only screen and (max-width: 361px) {
+  .map {
+    width: 100%;
+    padding: 20px 5px 0px 5px;
+  }
+  .indi {
+    padding: 20px 0px 0px 0px;
+  }
+  .map-right {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

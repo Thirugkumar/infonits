@@ -1,0 +1,283 @@
+.what-container {
+  overflow: hidden;
+}
+.whatWeDo {
+  width: 100%;
+  padding: 4rem 0rem 4rem 0rem;
+}
+.wt-subtitles {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.wt-subtitles span {
+  display: inline-block;
+  position: relative;
+}
+.wt-subtitles span:after {
+  content: "\2015";
+  position: absolute;
+  opacity: 100;
+  top: 0;
+  right: -25px;
+}
+.wt-info {
+  display: flex;
+  flex-direction: row;
+}
+.wt-heading {
+  width: 80%;
+}
+.wt-text {
+  width: 75%;
+}
+.wt-heading p {
+  color: #fff;
+  font-size: 2.6rem;
+  font-weight: 500;
+  line-height: 50px;
+}
+.wt-text p {
+  color: #fff;
+  margin-top: -10px;
+  line-height: 30px;
+  font-size: 1.2rem;
+}
+.wt-info .for-tap {
+  display: none;
+}
+
+.wt-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.wt-cards .card-box {
+  display: inline-block;
+  width: 260px;
+  height: 400px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  background-color: #002041;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.wt-card .title {
+  padding-top: 20px;
+}
+.card-box:hover {
+  background-color: #000e1b;
+}
+.card-box .layer {
+  z-index: 1;
+  position: absolute;
+  top: calc(100%);
+  height: 2%;
+  width: 100%;
+  left: 0;
+  transition: 0.5s;
+}
+.card-box .wt-card {
+  z-index: 2;
+  position: relative;
+}
+.card-box:hover .layer {
+  top: 98%;
+}
+.card-box:hover .title {
+  color: #ff5f35;
+}
+.card-box:hover .w-image {
+  transition: all 0.3s;
+  transform: scale(0.9);
+}
+.wt-card .title {
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.card-box .wt-card .w-image {
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 30%;
+  overflow: hidden;
+}
+
+.card-box .wt-card .subt {
+  color: #fff;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1rem;
+  line-height: 25px;
+}
+
+.wt-cards .orange {
+  padding: 0;
+  background-color: #ff5f35;
+}
+.wt-cards .orange:hover .wt-card-btn {
+  color: #ffffff;
+  background-color: #011f3d;
+  transition: all 0.5s;
+}
+.wt-card .wt-card-btn {
+  text-transform: uppercase;
+  color: #003366;
+  border-radius: 25px;
+  border-style: none;
+  height: 60px;
+  width: 220px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 140px;
+}
+
+.wt-card .wt-card-btn:hover {
+  color: #ffffff;
+  background-color: #011f3d;
+  transition: all 0.1s ease-in;
+}
+
+.wt-card .mssg {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 15px;
+  color: #ffffff;
+}
+.for-tap {
+  display: none;
+}
+@media only screen and (max-width: 4100px) {
+  .whatWeDo {
+    width: 1200px;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .whatWeDo {
+    width: 1180px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .whatWeDo {
+    padding: 3rem 1rem 3rem 1rem;
+    width: 100%;
+  }
+  .wt-info .for-tap {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .whatWeDo {
+    padding: 40px 20px 40px 20px;
+  }
+  .wt-cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .wt-cards .card-box {
+    width: 220px;
+  }
+  .wt-card .wt-card-btn {
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 835px) {
+  .whatWeDo {
+    padding: 40px 20px 40px 20px;
+    height: auto;
+  }
+  .wt-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .wt-heading {
+    width: 100%;
+  }
+  .wt-text {
+    width: 100%;
+    margin-top: 20px;
+    opacity: 80%;
+  }
+  .for-tap {
+    text-transform: uppercase;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px 60px 20px 60px;
+    border-radius: 25px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.4rem;
+    border-style: none;
+    background: linear-gradient(150deg, #ff5f35, #000000 70%);
+  }
+  .for-tap:hover {
+    transform: scale(0.95);
+    transition: all 1s ease;
+    background: linear-gradient(300deg, #000000, #ff5f35 70%);
+  }
+
+  .wt-cards .card-box {
+    margin: 1rem auto;
+    width: 95%;
+    height: 380px;
+    padding: 30px 10px 10px 10px;
+  }
+  .wt-cards .orange {
+    display: none;
+  }
+  .card-box .wt-card .w-image {
+    width: 140px;
+    height: 100px;
+  }
+  .w-image img {
+    height: 80px;
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 429px) {
+  .whatWeDo {
+    padding: 40px 10px 40px 10px;
+  }
+  .wt-heading p {
+    font-size: 2.3rem;
+  }
+  .for-tap {
+    width: 100%;
+  }
+  .for-tap:hover {
+    transform: scale(0.95);
+    transition: all 1s ease;
+    background: linear-gradient(300deg, #000000, #ee5f00 70%);
+  }
+  .wt-cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .wt-cards .card-box {
+    width: 98%;
+    height: fit-content;
+    margin-bottom: 10px;
+    padding: 40px 60px 40px 60px;
+  }
+  .card-box .wt-card .w-image {
+    width: 250px;
+    height: 140px;
+  }
+  .w-image img {
+    height: 120px;
+  }
+
+  .card-box .wt-card .title {
+    font-size: 2rem;
+    padding: 0px 20px 0px 20px;
+  }
+}

@@ -1,0 +1,54 @@
+.company-all {
+  background-color: rgba(128, 128, 128, 0.177);
+}
+.company {
+  width: 100%;
+  overflow: hidden;
+}
+
+.c-imgs {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.c-imgs img {
+  height: 50px;
+  cursor: pointer;
+  filter: saturate(0) contrast(1);
+}
+
+.c-imgs img:hover {
+  filter: none;
+  transform: scale(1.1);
+}
+@media only screen and (max-width: 4100px) {
+  .c-imgs {
+    margin: 0 auto;
+    width: 1200px;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .c-imgs {
+    margin: 0 auto;
+    width: 1200px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .c-imgs {
+    width: 1200px;
+  }
+}
+@media only screen and (max-width: 835px) {
+  .c-imgs {
+    width: 750px;
+  }
+  .c-imgs img {
+    height: 35px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .company {
+    display: none;
+  }
+}
